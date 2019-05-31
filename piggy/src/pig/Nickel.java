@@ -17,15 +17,21 @@ public class Nickel extends MoneyAbstract
     }
 
     @Override
+    public double getSingleValue()
+    {
+        return 0.05;
+    }
+
+    @Override
     public double getValue()
     {
         return quantity * 0.05;
     }
 
     @Override
-    public int getQuantity()
+    public void setQuantity(int i)
     {
-        return quantity;
+        quantity -= i;
     }
 
     public String getName()

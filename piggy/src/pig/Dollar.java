@@ -17,6 +17,12 @@ public class Dollar extends MoneyAbstract
     }
 
     @Override
+    public double getSingleValue()
+    {
+        return 1.00;
+    }
+
+    @Override
     public double getValue()
     {
         return quantity * 1.00;

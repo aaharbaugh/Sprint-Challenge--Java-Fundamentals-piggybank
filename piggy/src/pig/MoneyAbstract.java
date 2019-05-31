@@ -29,6 +29,12 @@ public abstract class MoneyAbstract
     }
 
     public abstract double getValue();
+    public abstract double getSingleValue();
+
+    public void setQuantity(int i)
+    {
+        quantity -= i;
+    }
 
     public int getId()
     {

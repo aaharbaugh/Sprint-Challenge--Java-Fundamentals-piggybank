@@ -17,6 +17,12 @@ public class Penny extends MoneyAbstract
     }
 
     @Override
+    public double getSingleValue()
+    {
+        return 0.01;
+    }
+
+    @Override
     public double getValue()
     {
         return quantity * 0.01;
@@ -27,7 +33,7 @@ public class Penny extends MoneyAbstract
     {
         return quantity;
     }
-
+    
     public String getName()
     {
         if(getQuantity() > 1){

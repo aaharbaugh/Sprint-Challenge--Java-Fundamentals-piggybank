@@ -17,6 +17,12 @@ public class Dime extends MoneyAbstract
     }
 
     @Override
+    public double getSingleValue()
+    {
+        return 0.10;
+    }
+
+    @Override
     public double getValue()
     {
         return quantity * 0.10;

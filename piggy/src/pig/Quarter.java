@@ -17,6 +17,12 @@ public class Quarter extends MoneyAbstract
     }
 
     @Override
+    public double getSingleValue()
+    {
+        return 0.25;
+    }
+
+    @Override
     public double getValue()
     {
         return quantity * 0.25;
