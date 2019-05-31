@@ -1,17 +1,17 @@
 package pig;
 
-public class Penny extends MoneyAbstract
+public class Nickel extends MoneyAbstract
 {
 
-    protected String name = "Penny";
+    protected String name = "Nickel";
     protected int quantity;
     
-    public Penny(int quantity)
+    public Nickel(int quantity)
     {
         this.quantity = quantity;
     }
 
-    public Penny()
+    public Nickel()
     {
         quantity = 1;
     }
@@ -19,7 +19,7 @@ public class Penny extends MoneyAbstract
     @Override
     public double getValue()
     {
-        return quantity * 0.01;
+        return quantity * 0.05;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Penny extends MoneyAbstract
     public String getName()
     {
         if(getQuantity() > 1){
-            return "Pennies";
+            return name + "s";
         } else {
             return name;
         }
